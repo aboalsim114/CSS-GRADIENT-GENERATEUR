@@ -1,3 +1,3 @@
-# CSS GRADIENT GENERATEUR TP
+# CSS GRADIENT GENERATEUR 
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-wjrfot)
+[Voir Le Demo Avec Le Code ⚡️](https://stackblitz.com/edit/react-wjrfot)
