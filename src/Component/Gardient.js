@@ -44,7 +44,9 @@ export default function Gradient() {
           />
         </div>
         <div>
+          <label htmlFor="range">Rotation</label>
           <input
+            id="range"
             value={range}
             onChange={(e) => setRange(e.target.value)}
             type="range"
