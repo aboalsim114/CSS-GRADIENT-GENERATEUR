@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+strong {
+  color: rgb(13, 156, 97);
+}
+
 #titre {
   text-align: center;
 }
