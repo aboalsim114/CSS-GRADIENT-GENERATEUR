@@ -5,13 +5,14 @@ export default function Gradient() {
   const [color2, setColor2] = useState(''); // input color2
   const [color3, setColor3] = useState(''); // input color3
   const [range, setRange] = useState(''); // input range
+  const resultCode = `background-color : linear-gradient(${range}deg,${color3},${color2},${color1} )`;
 
-  var resultCode;
   useEffect(() => {
     let preveiw = document.querySelector('.preveiw'); // recuperer le div preveiw
     preveiw.style.backgroundImage = `linear-gradient(${color3},${color2},${color1} )`;
-    if (range)
+    if (range) {
       preveiw.style.backgroundImage = `linear-gradient(${range}deg,${color3},${color2},${color1} )`;
+    }
   });
 
   return (
@@ -61,7 +62,11 @@ export default function Gradient() {
           <li>Color 3: {color3} </li>
         </ul>
         <br />
-        <h2 style={{ textAlign: 'center' }}>Result Code : {resultCode} </h2>
+        {resultCode ? (
+          <h2 style={{ textAlign: 'center' }}>
+            <strong>Result Code :</strong> {resultCode}{' '}
+          </h2>
+        ) : null}
       </div>
     </div>
   );
